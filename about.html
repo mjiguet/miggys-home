@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Miggy — Miggy's Home</title>
+  <meta name="description" content="The story behind Miggy's Home.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Poppins:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">🏠</span>
+        Miggy's Home
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="room-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="music.html">The Studio</a></li>
+        <li><a href="about.html" aria-current="page">About Miggy</a></li>
+        <li><a href="contact.html">Say Hi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="room wrap" style="padding-top:56px;">
+      <p class="eyebrow">About</p>
+      <h1 style="font-size:clamp(2rem, 4vw, 2.8rem);">The story behind the songs</h1>
+
+      <div class="bio-layout">
+        <div class="bio-portrait" aria-hidden="true">🎧</div>
+        <div>
+          <!--
+            Replace the paragraph below with your real bio.
+            Talk about how you started, your influences,
+            and what kind of music you make.
+          -->
+          <p>
+            Hi, I'm Miggy. Miggy's Home started as a handful of songs recorded in a bedroom
+            and turned into a place to share music, covers, and the moments in between.
+          </p>
+          <p>
+            Replace this paragraph with your own story — how you got into music, what inspires
+            your songs, and what people can expect when they stop by.
+          </p>
+          <div class="sticker-row">
+            <span class="sticker">📍 based in ...</span>
+            <span class="sticker">🎼 genre: ...</span>
+            <span class="sticker">🎹 est. 20xx</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="awning coral" aria-hidden="true"></div>
+
+    <section class="room wrap">
+      <div class="room-title">
+        <h2>Gear &amp; favorites</h2>
+      </div>
+      <div class="window-grid">
+        <div class="window-card">
+          <span class="tag">Setup</span>
+          <h3>What I record with</h3>
+          <p>List your instruments, mic, or software here.</p>
+        </div>
+        <div class="window-card">
+          <span class="tag">Influences</span>
+          <h3>Who inspires the sound</h3>
+          <p>Name the artists or styles that shape your music.</p>
+        </div>
+        <div class="window-card">
+          <span class="tag">Fun fact</span>
+          <h3>Something personal</h3>
+          <p>Share a small detail that makes the page feel like you.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="porch-light" aria-hidden="true"></span>
+    Miggy's Home · © <span id="year"></span> · thanks for stopping by
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

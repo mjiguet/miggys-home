@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Say Hi — Miggy's Home</title>
+  <meta name="description" content="Get in touch with Miggy's Home — socials, bookings, and collabs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Poppins:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">🏠</span>
+        Miggy's Home
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="room-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="music.html">The Studio</a></li>
+        <li><a href="about.html">About Miggy</a></li>
+        <li><a href="contact.html" aria-current="page">Say Hi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="room wrap" style="padding-top:56px;">
+      <p class="eyebrow">The mailbox</p>
+      <h1 style="font-size:clamp(2rem, 4vw, 2.8rem);">Say hi, book a session, or just drop a note.</h1>
+      <p class="lede">Find Miggy's Home on socials, or reach out directly. The mailbox is always open.</p>
+
+      <!--
+        HOW TO EDIT THESE LINKS:
+        Replace each href="#" below with your real profile URL,
+        e.g. href="https://youtube.com/@yourchannel"
+      -->
+      <div class="mailbox-grid">
+        <a class="mailbox-link" href="#" target="_blank" rel="noopener">
+          <span class="mailbox-icon" style="background:var(--coral); color:white;">▶️</span>
+          YouTube
+        </a>
+        <a class="mailbox-link" href="#" target="_blank" rel="noopener">
+          <span class="mailbox-icon" style="background:var(--mint); color:white;">🎧</span>
+          Spotify
+        </a>
+        <a class="mailbox-link" href="#" target="_blank" rel="noopener">
+          <span class="mailbox-icon" style="background:var(--sky); color:white;">📸</span>
+          Instagram
+        </a>
+        <a class="mailbox-link" href="#" target="_blank" rel="noopener">
+          <span class="mailbox-icon" style="background:var(--sunshine); color:var(--plum);">🎵</span>
+          TikTok
+        </a>
+        <a class="mailbox-link" href="mailto:hello@example.com">
+          <span class="mailbox-icon" style="background:var(--plum); color:white;">✉️</span>
+          Email
+        </a>
+      </div>
+    </section>
+
+    <div class="awning" aria-hidden="true"></div>
+
+    <section class="room wrap">
+      <div class="room-title">
+        <h2>For bookings &amp; collabs</h2>
+      </div>
+      <p style="max-width:60ch; color:rgba(45,27,78,0.8);">
+        Interested in a collab, session, or booking Miggy for an event? Email
+        <a href="mailto:hello@example.com">hello@example.com</a> with a bit about what you have in mind.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="porch-light" aria-hidden="true"></span>
+    Miggy's Home · © <span id="year"></span> · thanks for stopping by
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Studio — Miggy's Home</title>
+  <meta name="description" content="Watch videos and listen to music from Miggy's Home.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Poppins:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">🏠</span>
+        Miggy's Home
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="room-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="music.html" aria-current="page">The Studio</a></li>
+        <li><a href="about.html">About Miggy</a></li>
+        <li><a href="contact.html">Say Hi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" style="grid-template-columns: 1fr;">
+      <div>
+        <p class="eyebrow">The studio</p>
+        <h1>Where the songs live.</h1>
+        <p class="lede">Videos, covers, and tracks — everything Miggy's Home has put out, all in one room.</p>
+      </div>
+    </section>
+
+    <div class="awning" aria-hidden="true"></div>
+
+    <section class="room wrap">
+      <div class="room-title">
+        <h2>Videos</h2>
+      </div>
+      <div class="window-grid" style="margin-top:24px;">
+
+        <div>
+          <div class="embed-frame">
+            <!-- Replace with: YouTube video → Share → Embed → paste <iframe> here -->
+            <div class="embed-placeholder">
+              <div><strong>📺 Video 1</strong>Paste a YouTube embed &lt;iframe&gt; here.</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="embed-frame">
+            <div class="embed-placeholder">
+              <div><strong>📺 Video 2</strong>Paste a YouTube embed &lt;iframe&gt; here.</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="embed-frame">
+            <div class="embed-placeholder">
+              <div><strong>📺 Video 3</strong>Paste a YouTube embed &lt;iframe&gt; here.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p style="margin-top:18px; color:rgba(45,27,78,0.7); font-family: var(--font-tag); font-size:0.85rem;">
+        Tip: to add more videos, copy one of the boxes above and swap in a new embed.
+      </p>
+    </section>
+
+    <div class="awning mint" aria-hidden="true"></div>
+
+    <section class="room wrap">
+      <div class="room-title">
+        <h2>Listen</h2>
+      </div>
+      <p style="max-width:60ch; color:rgba(45,27,78,0.8);">Stream the latest track right here.</p>
+
+      <div class="embed-frame spotify" style="margin-top:20px;">
+        <!--
+          TO ADD SPOTIFY:
+          1. Open the track/album/playlist in Spotify → Share → Embed track
+          2. Copy the <iframe> code
+          3. Paste it here, replacing this placeholder <div>
+        -->
+        <div class="embed-placeholder">
+          <div><strong>🎧 Spotify player</strong>Paste a Spotify embed &lt;iframe&gt; here.</div>
+        </div>
+      </div>
+
+      <div class="sticker-row">
+        <span class="sticker">🎸 originals</span>
+        <span class="sticker">🎤 covers</span>
+        <span class="sticker">🎹 acoustic sessions</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="porch-light" aria-hidden="true"></span>
+    Miggy's Home · © <span id="year"></span> · thanks for stopping by
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

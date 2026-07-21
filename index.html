@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miggy's Home — Music Channel</title>
+  <meta name="description" content="Miggy's Home — original music, covers, and behind-the-scenes videos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Poppins:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">🏠</span>
+        Miggy's Home
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="room-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="music.html">The Studio</a></li>
+        <li><a href="about.html">About Miggy</a></li>
+        <li><a href="contact.html">Say Hi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div>
+        <p class="eyebrow">Welcome in</p>
+        <h1>Come on in, kick off your shoes — this is Miggy's Home.</h1>
+        <p class="lede">New music, covers, and behind-the-scenes sessions, recorded right where they're made. Grab a seat and press play.</p>
+        <div class="hero-actions">
+          <a href="music.html" class="btn btn-primary">🎵 Visit the Studio</a>
+          <a href="contact.html" class="btn btn-ghost">👋 Say hello</a>
+        </div>
+      </div>
+      <div class="welcome-mat" aria-hidden="true">
+        <span>🎶</span>
+      </div>
+    </section>
+
+    <div class="awning" aria-hidden="true"></div>
+
+    <section class="room wrap">
+      <div class="room-title">
+        <h2>Latest from the living room</h2>
+      </div>
+      <p style="max-width:60ch; color:rgba(45,27,78,0.8);">The newest video, straight off the shelf. Head to <a href="music.html">The Studio</a> for the full collection.</p>
+
+      <div class="embed-frame" style="margin-top:20px;">
+        <!--
+          TO ADD YOUR VIDEO:
+          1. Go to your YouTube video → Share → Embed
+          2. Copy the <iframe> code they give you
+          3. Paste it here, replacing this placeholder <div>
+        -->
+        <div class="embed-placeholder">
+          <div>
+            <strong>📺 Your latest video goes here</strong>
+            Paste your YouTube embed &lt;iframe&gt; code in place of this box.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="awning coral" aria-hidden="true"></div>
+
+    <section class="room wrap">
+      <div class="room-title">
+        <h2>What's around the house</h2>
+      </div>
+      <div class="window-grid">
+        <div class="window-card">
+          <span class="tag">Studio</span>
+          <h3>Music &amp; videos</h3>
+          <p>Every song, cover, and session, all in one room.</p>
+          <p><a href="music.html">Step inside →</a></p>
+        </div>
+        <div class="window-card">
+          <span class="tag">Bio</span>
+          <h3>About Miggy</h3>
+          <p>The story behind the songs, and how it all started.</p>
+          <p><a href="about.html">Read more →</a></p>
+        </div>
+        <div class="window-card">
+          <span class="tag">Mailbox</span>
+          <h3>Get in touch</h3>
+          <p>Bookings, collabs, or just to say hi — the mailbox is open.</p>
+          <p><a href="contact.html">Say hello →</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="porch-light" aria-hidden="true"></span>
+    Miggy's Home · © <span id="year"></span> · thanks for stopping by
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
